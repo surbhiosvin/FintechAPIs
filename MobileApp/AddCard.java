@@ -44,12 +44,11 @@ public class AddCard extends BaseActivity implements View.OnClickListener {
     CheckBox defaultCard;
     LinearLayout linear;
 
-    String SEPARATOR = " ", mPreviousText, APIcardnumber = "", APIexpiryMonth = "", APIexpiryYear = "", APIcvv = "", tid = "", cno = "", PUBLISHABLE_KEY = "pk_test_ho0D4zAZULYWZcvNHEHFasyE"
-            //TODO change key before going live /*PUBLISHABLE_KEY = "pk_live_egNBOvzPd1DewC3sOGQe4H0c"*/
+    String SEPARATOR = " ", mPreviousText, APIcardnumber = "", APIexpiryMonth = "", APIexpiryYear = "", APIcvv = "", tid = "", cno = "", PUBLISHABLE_KEY = "StripeKey"
+            
             , is_default = "";
     int key;
     Dialog dialog;
-    //pk_test_LdsHMlToNNCf4FRSAdObZ20g  pk_live_egNBOvzPd1DewC3sOGQe4H0c
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
