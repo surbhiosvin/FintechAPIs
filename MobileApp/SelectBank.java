@@ -47,7 +47,7 @@ public class SelectBank extends BaseActivity implements View.OnClickListener {
 
         // Initialize Link
         HashMap<String, String> linkInitializeOptions = new HashMap<String, String>();
-        linkInitializeOptions.put("key", "c74afb41cee71cd888636cc90426fb");
+        linkInitializeOptions.put("key", "PlaidKey");
         linkInitializeOptions.put("product", "auth");
         linkInitializeOptions.put("apiVersion", "v2"); // set this to "v1" if using the legacy Plaid API
         // TODO change mode before going live
@@ -55,8 +55,8 @@ public class SelectBank extends BaseActivity implements View.OnClickListener {
         linkInitializeOptions.put("env", "sandbox");
         linkInitializeOptions.put("clientName", "HBCU");
         linkInitializeOptions.put("selectAccount", "false");
-        linkInitializeOptions.put("webhook", "http://requestb.in");
-        linkInitializeOptions.put("baseUrl", "https://cdn.plaid.com/link/v2/stable/link.html");
+        linkInitializeOptions.put("webhook", "RequestLink");
+        linkInitializeOptions.put("baseUrl", "PlaidBaseURL");
 
         final Uri linkInitializationUrl = generateLinkInitializationUrl(linkInitializeOptions);
         final WebView plaidLinkWebview = (WebView) findViewById(R.id.webview);
