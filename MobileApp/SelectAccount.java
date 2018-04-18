@@ -155,8 +155,8 @@ public class SelectAccount extends BaseActivity implements View.OnClickListener 
             Log.e("access token", " is " + access_token);
 
             Map<String, String> obj = new HashMap<>();
-            obj.put("client_id", "596cd0c14e95b810ac887df6");
-            obj.put("secret", "36ca7ae963c88b05111f1246a5df69");
+            obj.put("client_id", "PlaidClientID");
+            obj.put("secret", "PlaidSecretToken");
             obj.put("access_token", access_token);
 
             showLoader();
